@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.rs.retail.store</OriginalElement>
+  <nodes>
+    <node x="2131.732142857143" y="96.0">com.rs.retail.store.domain.Item</node>
+    <node x="1.5" y="96.0">com.rs.retail.store.utils.DiscountTypeFinder</node>
+    <node x="1971.8154761904761" y="182.0">com.rs.retail.store.utils.validator.RequestValidatorTest</node>
+    <node x="727.5000000000001" y="96.0">com.rs.retail.store.strategy.FlatPriceCalculationStrategy</node>
+    <node x="1597.5" y="96.0">com.rs.retail.store.service.RetailStoreCalculationService</node>
+    <node x="213.5" y="96.0">com.rs.retail.store.strategy.LongServicePriceCalculationStrategy</node>
+    <node x="1301.5" y="96.0">com.rs.retail.store.strategy.AffiliatePriceCalculationStrategy</node>
+    <node x="0.0" y="0.0">com.rs.retail.store.dao.CustomerRepository</node>
+    <node x="535.5000000000001" y="96.0">com.rs.retail.store.utils.DiscountHandler</node>
+    <node x="2274.732142857143" y="96.0">com.rs.retail.store.domain.Customer</node>
+    <node x="1872.5" y="96.0">com.rs.retail.store.utils.validator.RequestValidator</node>
+    <node x="2258.732142857143" y="0.0">com.rs.retail.store.domain.CustomerType</node>
+    <node x="2115.732142857143" y="0.0">com.rs.retail.store.domain.ItemType</node>
+    <node x="646.5000000000001" y="0.0">com.rs.retail.store.strategy.PriceCalculationStrategy</node>
+    <node x="993.5000000000001" y="96.0">com.rs.retail.store.strategy.EmployeePriceCalculationStrategy</node>
+    <node x="1858.5238095238096" y="0.0">com.rs.retail.store.dao.ItemRepository</node>
+    <node x="2227.357142857143" y="182.0">com.rs.retail.store.domain.Bill</node>
+    <node x="1768.0" y="182.0">com.rs.retail.store.controller.BillingController</node>
+    <node x="950.6964285714286" y="182.0">com.rs.retail.store.service.RetailStoreCalculationServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.rs.retail.store.service.RetailStoreCalculationServiceImpl" target="com.rs.retail.store.utils.DiscountHandler">
+      <point x="-35.625" y="-18.0" />
+      <point x="1057.5714285714284" y="152.0" />
+      <point x="621.5000000000001" y="152.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.strategy.EmployeePriceCalculationStrategy" target="com.rs.retail.store.strategy.PriceCalculationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="1137.5" y="66.0" />
+      <point x="813.0000000000001" y="66.0" />
+      <point x="55.5" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.utils.validator.RequestValidatorTest" target="com.rs.retail.store.dao.ItemRepository">
+      <point x="0.0" y="-18.0" />
+      <point x="2072.815476190476" y="162.0" />
+      <point x="2085.791666666667" y="162.0" />
+      <point x="2085.791666666667" y="76.0" />
+      <point x="1993.5238095238096" y="76.0" />
+      <point x="54.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.domain.Customer" target="com.rs.retail.store.domain.CustomerType">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.controller.BillingController" target="com.rs.retail.store.utils.validator.RequestValidator">
+      <point x="42.25" y="-18.0" />
+      <point x="1894.75" y="162.0" />
+      <point x="1916.25" y="162.0" />
+      <point x="-43.75" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.domain.Bill" target="com.rs.retail.store.domain.Customer">
+      <point x="20.5" y="-18.0" />
+      <point x="2288.857142857143" y="162.0" />
+      <point x="2336.732142857143" y="162.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.strategy.AffiliatePriceCalculationStrategy" target="com.rs.retail.store.strategy.PriceCalculationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="1439.0" y="56.0" />
+      <point x="850.0000000000001" y="56.0" />
+      <point x="92.5" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.utils.validator.RequestValidatorTest" target="com.rs.retail.store.utils.validator.RequestValidator">
+      <point x="-67.33333333333326" y="-18.0" />
+      <point x="2005.4821428571431" y="162.0" />
+      <point x="2003.75" y="162.0" />
+      <point x="43.75" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.utils.validator.RequestValidator" target="com.rs.retail.store.dao.ItemRepository">
+      <point x="0.0" y="-18.0" />
+      <point x="1960.0" y="76.0" />
+      <point x="1939.5238095238096" y="76.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.strategy.LongServicePriceCalculationStrategy" target="com.rs.retail.store.strategy.PriceCalculationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="364.5" y="56.0" />
+      <point x="665.0000000000001" y="56.0" />
+      <point x="-92.5" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.domain.Bill" target="com.rs.retail.store.domain.Item">
+      <point x="-20.5" y="-18.0" />
+      <point x="2247.857142857143" y="162.0" />
+      <point x="2199.982142857143" y="162.0" />
+      <point x="22.75" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.domain.Item" target="com.rs.retail.store.domain.ItemType">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.service.RetailStoreCalculationServiceImpl" target="com.rs.retail.store.utils.DiscountTypeFinder">
+      <point x="-106.875" y="-18.0" />
+      <point x="986.3214285714286" y="162.0" />
+      <point x="97.5" y="162.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.utils.DiscountTypeFinder" target="com.rs.retail.store.dao.CustomerRepository">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.controller.BillingController" target="com.rs.retail.store.service.RetailStoreCalculationService">
+      <point x="-42.25" y="-18.0" />
+      <point x="1810.25" y="162.0" />
+      <point x="1788.75" y="162.0" />
+      <point x="63.75" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.strategy.FlatPriceCalculationStrategy" target="com.rs.retail.store.strategy.PriceCalculationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="850.5000000000001" y="76.0" />
+      <point x="776.0000000000001" y="76.0" />
+      <point x="18.5" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.service.RetailStoreCalculationServiceImpl" target="com.rs.retail.store.service.RetailStoreCalculationService">
+      <point x="106.875" y="-18.0" />
+      <point x="1200.0714285714284" y="162.0" />
+      <point x="1661.25" y="162.0" />
+      <point x="-63.75" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.utils.DiscountHandler" target="com.rs.retail.store.strategy.PriceCalculationStrategy">
+      <point x="43.0" y="-18.0" />
+      <point x="664.5000000000001" y="76.0" />
+      <point x="739.0000000000001" y="76.0" />
+      <point x="-18.5" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.service.RetailStoreCalculationServiceImpl" target="com.rs.retail.store.dao.ItemRepository">
+      <point x="35.625" y="-18.0" />
+      <point x="1128.8214285714284" y="152.0" />
+      <point x="1587.0" y="152.0" />
+      <point x="1587.0" y="76.0" />
+      <point x="1885.5238095238096" y="76.0" />
+      <point x="-54.0" y="18.0" />
+    </edge>
+    <edge source="com.rs.retail.store.utils.validator.RequestValidatorTest" target="com.rs.retail.store.domain.Item">
+      <point x="67.33333333333348" y="-18.0" />
+      <point x="2140.1488095238096" y="162.0" />
+      <point x="2154.482142857143" y="162.0" />
+      <point x="-22.75" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7568788501026694" x="924.1356483993488" y="129.95252306022786" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
