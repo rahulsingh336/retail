@@ -2,7 +2,7 @@
 
 # Retail Billing api
 
-Retail billing api is used to calculate bill amount based in various rules defined for customer
+Retail billing api is used to calculate bill amount based on various rules defined for customer
 
 ## Installation/Build/Run
 
